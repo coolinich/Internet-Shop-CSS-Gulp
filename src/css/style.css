@@ -1,11 +1,47 @@
+/*===== Fonts start =====*/
+@font-face {
+    font-family: 'robotobold';
+    src: url('../fonts/roboto-bold-webfont.woff2') format('woff2'),
+         url('../fonts/roboto-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
 
+}
 
+@font-face {
+    font-family: 'robotomedium';
+    src: url('../fonts/roboto-medium-webfont.woff2') format('woff2'),
+         url('../fonts/roboto-medium-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'robotoregular';
+    src: url('../fonts/roboto-regular-webfont.woff2') format('woff2'),
+         url('../fonts/roboto-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+/*===== Fonts end =====*/
 /*===== Default styles =====*/
 *{
 	box-sizing: border-box;
 	margin: 0;
 	padding: 0;
 	outline: none;
+}
+
+html {
+    font-size: 15px;
+}
+
+body {
+    margin: 0;
+    color: #263238;
+    font-family: 'robotoregular', Helvetica, sans-serif;
 }
 
 a{
@@ -41,9 +77,15 @@ textarea {
 .bg-red {
     background-color: #ef6c00;
 }
+
+.bg-dark-red {
+    background-color: #e74c3c;
+}
+
 .bg-green {
     background-color: #95c85a;
 }
+
 .ml-auto {
     margin-left: auto;
 }
@@ -73,9 +115,24 @@ textarea {
     padding-top: 26px;
     padding-bottom: 26px;
 }
+
+.need-help span {
+    color: #546e7a;
+    line-height: 1.6rem;
+}
+
+.need-help span span {
+    color: #e74c3c;
+}
+
 .user-controls {
     margin-left: 53px;
 }
+
+.user-controls .dropdown-item i {
+    font-size: 1.07rem;
+}
+
 .dropdown-item + .dropdown-item {
     margin-left: 16px;
 }
@@ -91,6 +148,22 @@ textarea {
     position: relative;
     cursor: pointer;
 }
+
+.user-info-wrap {
+    font-size: .93rem;
+    line-height: 1.6rem;
+}
+
+.user-dropdown-control h6 {
+    font-family: 'robotomedium', Helvetica, sans-serif;
+    color: #222;
+}
+
+.user-dropdown-control span {
+    font-family: 'robotobold', Helvetica, sans-serif;
+    color: #8bc34a;
+}
+
 .notify-count {
     position: absolute;
     width: 18px;
@@ -98,7 +171,7 @@ textarea {
     -webkit-border-radius: 50%;
        -moz-border-radius: 50%;
             border-radius: 50%;
-    font-size: 11px;
+    font-size: .73rem;
     color: #fff;
     top: -8px;
     right: -5px;
@@ -115,6 +188,24 @@ textarea {
        -moz-border-radius: 50%;
             border-radius: 50%;
 }
+
+.bottom-header .header-nav {
+    font-family: 'robotomedium', Helvetica, sans-serif;
+    color: #fff;
+    font-size: .93rem;
+    line-height: 2rem;
+    height: 60px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.bottom-header .header-nav a + a {
+    margin-left: 40px;
+}
+
+
+
 /* header end */
 /* inner start */
 .inner.small-inner {

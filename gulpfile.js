@@ -32,7 +32,7 @@ gulp.task('tinypng', function(){
 gulp.task('browser-sync', function(){
    browserSync({
        server: {
-           baseDir: 'src'
+           baseDir: 'app'
        },
        notify: false
    }); 
@@ -53,6 +53,7 @@ gulp.task('clean', function(){
 
 //here in list of tasks also 'tinypng' should be added
 gulp.task('build', ['clean', 'css', 'cssmin'], function(){
+//this one will be unnecessary if 'tinypng' is present in tasks list 
     gulp.src('src/img/**/*.+(jpg|png|jpeg)')
     .pipe(gulp.dest('app/img'));
 

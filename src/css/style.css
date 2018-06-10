@@ -427,15 +427,17 @@ textarea {
 }
 /* inner end */
 /*===== Custom styles start =====*/
-/* view-controls start */
+/* all-items start */
 .view-controls {
     padding: 20px;
     margin-bottom: 30px;
 }
-/* view-controls end */
+
 .all-items-wrap .card {
     margin-bottom: 30px;
 }
+
+/* all-items end */
 
 
 /*===== Custom styles end =====*/

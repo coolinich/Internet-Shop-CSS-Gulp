@@ -79,6 +79,14 @@ textarea {
     background-color: #8bc34a;
 }
 
+.bg-white {
+    background-color: #fff;
+}
+
+.border-grey {
+    border: 1px solid #dedede;
+}
+
 .ml-auto {
     margin-left: auto;
 }
@@ -103,6 +111,7 @@ textarea {
     text-align: center;
 }
 
+/*===== Default components start =====*/
 .btn {
     display: inline-block;
     text-align: center;
@@ -113,7 +122,6 @@ textarea {
     line-height: 2.2rem;
     border-radius: 3px;
 }
-
 
 .logout-btn {
     padding: 0 18px;
@@ -127,6 +135,108 @@ textarea {
     padding: 0 14px;
 }
 
+.breadcrumb {
+    padding: 45px 0;
+    background-color: inherit;
+}
+
+.breadcrumb > li {
+    display: inline-block;
+}
+
+.breadcrumb > li a {
+    color: #b0bec5;
+}
+
+.breadcrumb > li + li::before {
+    content: '-';
+    padding: 0 5px;
+    color: #8bc34a;
+}
+
+.breadcrumb > li.active {
+    color: #263238;
+}
+
+.aside-section {
+    padding: 20px 30px 40px;
+}
+
+.aside-section + .aside-section {
+    margin-top: 30px;
+}
+
+.aside-title {
+    padding-bottom: 18px;
+    margin-bottom: 25px;
+    border-bottom: 1px solid #dde3e8;
+    font-family: 'robotobold', Helvetica, sans-serif;
+    font-size: 1.33rem;
+}
+
+.aside-section .default-chevron-list > li + li {
+    margin-top: 20px;
+}
+
+.aside-section .default-chevron-list > li > i {
+    color: #8bc34a;
+    margin-right: 10px;
+}
+
+.aside-section .category-item-count {
+    color: #90a4ae;
+}
+
+.card {
+    box-shadow: 0 1px 2px rgba(205, 214, 222, .75);
+    transition: all .1s ease-in;
+}
+
+.card:hover {
+    box-shadow: 0 16px 20px rgba(216, 216, 216, .75);
+}
+
+
+.card-img img {
+    width: 100%;
+}
+
+.card-description {
+    padding: 25px 20px;
+    border-bottom: 1px solid #e7ecf2;
+}
+
+.card-item-info .card-title {
+    display: block;
+}
+
+.card-item-info .card-category {
+    display: block;
+}
+
+.card-author-info {
+    padding: 16px 20px;
+}
+
+.card-author img {
+    width: 30px;
+    height: 30px;
+}
+
+.product-rating li {
+    display: inline-block;
+    font-size: .8rem;
+    color: #ffa726;
+}   
+
+.product-reviews-count::before {
+    content: '(';
+}
+
+.product-reviews-count::after {
+    content: ')';
+}
+/*===== Default components end =====*/
 
 /*===== Custom styles start =====*/
 /* header start */
@@ -317,3 +427,15 @@ textarea {
 }
 /* inner end */
 /*===== Custom styles start =====*/
+/* view-controls start */
+.view-controls {
+    padding: 20px;
+    margin-bottom: 30px;
+}
+/* view-controls end */
+.all-items-wrap .card {
+    margin-bottom: 30px;
+}
+
+
+/*===== Custom styles end =====*/

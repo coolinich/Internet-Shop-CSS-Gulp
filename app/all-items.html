@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <header id="header">
+    <header id="header" class="bg-white">
         <div class="top-header container d-flex align-items-center">
             <div class="logo">
                 <a href="index.html">
@@ -142,11 +142,118 @@
                             <div class="aside-section bg-white border-grey">
                                 <h3 class="aside-title">Price Range</h3>
                                 <!-- /.aside-title -->
+                                <button class="btn aside-btn bg-light-green"><i class="fas fa-search"></i> Search</button>
                             </div>
                             <!-- /.aside-section -->
                             <div class="aside-section bg-white border-grey">
                                 <h3 class="aside-title">Top 10 Sellers</h3>
                                 <!-- /.aside-title -->
+                                <div class="card-top-seller bg-white">
+                                    <div class="card-img">
+                                        <a href="#">
+                                            <img src="img/card-item-img.jpg" alt="">
+                                        </a>
+                                    </div>
+                                    <!-- /.card-img -->
+                                    <div class="card-description d-flex">
+                                        <div class="card-item-info">
+                                            <a href="#" class="card-title">WISTIA Corporate</a>
+                                            <span class="card-category">WordPress</span>
+                                        </div>
+                                        <!-- /.card-item-info -->
+                                        <span class="ml-auto card-price">$12</span> 
+                                        <!-- /.card-price -->
+                                    </div>
+                                    <!-- /.card-description -->
+                                    <div class="card-author-info d-flex align-items-center">
+                                        <div class="card-author">
+                                            <img src="img/user-avatar.png" alt="">
+                                            <span>dmgame</span>
+                                        </div>
+                                        <!-- /.card-author -->
+                                        <ul class="product-rating ml-auto">
+                                            <li><i class="fas fa-star"></i></li>
+                                            <li><i class="fas fa-star"></i></li>
+                                            <li><i class="fas fa-star"></i></li>
+                                            <li><i class="fas fa-star"></i></li>
+                                            <li><i class="fas fa-star"></i></li>
+                                            </ul>
+                                        <!-- /ul.product-rating -->
+                                    </div>
+                                    <!-- /.card-author-info -->
+                                </div>
+                                <!-- /.card-top-seller -->
+                                <div class="card-top-seller bg-white">
+                                    <div class="card-img">
+                                        <a href="#">
+                                            <img src="img/card-item-img.jpg" alt="">
+                                        </a>
+                                    </div>
+                                    <!-- /.card-img -->
+                                    <div class="card-description d-flex">
+                                        <div class="card-item-info">
+                                            <a href="#" class="card-title">WISTIA Corporate</a>
+                                            <span class="card-category">WordPress</span>
+                                        </div>
+                                        <!-- /.card-item-info -->
+                                        <span class="ml-auto card-price">$12</span> 
+                                        <!-- /.card-price -->
+                                    </div>
+                                    <!-- /.card-description -->
+                                    <div class="card-author-info d-flex align-items-center">
+                                        <div class="card-author">
+                                            <img src="img/user-avatar.png" alt="">
+                                            <span>dmgame</span>
+                                        </div>
+                                        <!-- /.card-author -->
+                                        <ul class="product-rating ml-auto">
+                                            <li><i class="fas fa-star"></i></li>
+                                            <li><i class="fas fa-star"></i></li>
+                                            <li><i class="fas fa-star"></i></li>
+                                            <li><i class="fas fa-star"></i></li>
+                                            <li><i class="fas fa-star"></i></li>
+                                            </ul>
+                                        <!-- /ul.product-rating -->
+                                    </div>
+                                    <!-- /.card-author-info -->
+                                </div>
+                                <!-- /.card-top-seller -->
+                                <div class="card-top-seller bg-white">
+                                    <div class="card-img">
+                                        <a href="#">
+                                            <img src="img/card-item-img.jpg" alt="">
+                                        </a>
+                                    </div>
+                                    <!-- /.card-img -->
+                                    <div class="card-description d-flex">
+                                        <div class="card-item-info">
+                                            <a href="#" class="card-title">WISTIA Corporate</a>
+                                            <span class="card-category">WordPress</span>
+                                        </div>
+                                        <!-- /.card-item-info -->
+                                        <span class="ml-auto card-price">$12</span> 
+                                        <!-- /.card-price -->
+                                    </div>
+                                    <!-- /.card-description -->
+                                    <div class="card-author-info d-flex align-items-center">
+                                        <div class="card-author">
+                                            <img src="img/user-avatar.png" alt="">
+                                            <span>dmgame</span>
+                                        </div>
+                                        <!-- /.card-author -->
+                                        <ul class="product-rating ml-auto">
+                                            <li><i class="fas fa-star"></i></li>
+                                            <li><i class="fas fa-star"></i></li>
+                                            <li><i class="fas fa-star"></i></li>
+                                            <li><i class="fas fa-star"></i></li>
+                                            <li><i class="fas fa-star"></i></li>
+                                            </ul>
+                                        <!-- /ul.product-rating -->
+                                    </div>
+                                    <!-- /.card-author-info -->
+                                </div>
+                                <!-- /.card-top-seller -->
+                                <button class="btn aside-btn bg-light-green">View All</button>                          
                             </div>
                             <!-- /.aside-section -->
                         </aside>
@@ -154,8 +261,18 @@
                     </div>
                     <!-- /.col-md-3 -->
                     <div class="col-md-9">
-                        <div class="view-controls bg-white border-grey">
-
+                        <div class="view-controls d-flex justify-content-between bg-white border-grey">
+                            <div class="dropdown-sort-by">
+                                <i class="fas fa-sort-amount-down"></i>
+                                <span class="sort-by-option">Sort by: New Items</span>
+                                <a href="#" class="btn-sort-by"></a><i class="fas fa-sort"></i></a>
+                            </div>
+                            <!-- /.sort-by -->
+                            <div class="change-view">
+                                <a href="#" class="btn-change-view active"><i class="fas fa-th-large"></i></a>
+                                <a href="#" class="btn-change-view"><i class="fas fa-th-list"></i></a>                            
+                            </div>
+                            <!-- /.change-view -->
                         </div>
                         <!-- /.view-controls -->
                         <div class="row">
@@ -629,6 +746,13 @@
                             <!-- /.col-lg-4 -->
                         </div>
                         <!-- /.row -->
+                        <ul class="pagination">
+                            <li><a href="#">1</a></li>
+                            <li><a href="#">2</a></li>
+                            <li><a href="#">3</a></li>
+                            <li><a href="#">4</a></li>                            
+                        </ul>
+                        <!-- /.pagination -->
                     </div>
                     <!-- /.col-md-9 -->
                 </div>

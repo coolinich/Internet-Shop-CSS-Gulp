@@ -135,6 +135,17 @@ textarea {
     padding: 0 14px;
 }
 
+.aside-btn {
+    width: 100%;
+    padding: 0 55px;
+    color: #fff;
+    font-size: inherit;
+    line-height: 3rem;
+    border-radius: 0;
+    font-family: 'robotomedium', Helvetica, sans-serif;
+}
+
+
 .breadcrumb {
     padding: 45px 0;
     background-color: inherit;
@@ -187,6 +198,37 @@ textarea {
     color: #90a4ae;
 }
 
+.aside-section .card-top-seller + .card-top-seller {
+    margin-top: 30px;
+}
+
+.aside-section .card-top-seller .card-description {
+    padding: 15px 0;
+    border-bottom: 0;
+}
+
+.aside-section .card-top-seller .card-author-info {
+    padding-top: 0px;
+    padding-right: 0px;
+    padding-left: 0px;
+    padding-bottom: 25px;
+    border-bottom: 1px solid #dde3e8;
+}
+
+.aside-section .card-top-seller:last-of-type .card-author-info {
+    border-bottom: none;
+    margin-bottom: 10px;
+}
+
+.aside-section .card-item-info .card-title {
+    font-family: 'robotobold', Helvetica, sans-serif;
+    margin-bottom: 5px;
+}
+
+.aside-section .card-description .card-price {
+    font-size: 1.07rem;
+}
+
 .card {
     box-shadow: 0 1px 2px rgba(205, 214, 222, .75);
     transition: all .1s ease-in;
@@ -206,13 +248,26 @@ textarea {
     border-bottom: 1px solid #e7ecf2;
 }
 
+.card-description .card-price {
+    font-family: 'robotobold', Helvetica, sans-serif;
+    font-size: 1.33rem;
+}
+
 .card-item-info .card-title {
     display: block;
+    font-family: 'robotomedium', Helvetica, sans-serif;
+    font-size: 1.07rem;
+    margin-bottom: 10px;
+
 }
 
 .card-item-info .card-category {
     display: block;
+    font-size: .93rem;
+    color: #8bc34a;
 }
+
+
 
 .card-author-info {
     padding: 16px 20px;
@@ -221,6 +276,17 @@ textarea {
 .card-author img {
     width: 30px;
     height: 30px;
+    margin-right: 10px;
+}
+
+.card-author span {
+    font-family: 'robotomedium', Helvetica, sans-serif;
+    color: #546e7a;
+    font-size: .93rem;
+}
+
+.product-rating {
+    margin-right: 9px;
 }
 
 .product-rating li {
@@ -229,13 +295,52 @@ textarea {
     color: #ffa726;
 }   
 
+.product-reviews-count {
+    font-size: .8rem;
+}
+
 .product-reviews-count::before {
     content: '(';
+    color: #b0bec5;
 }
 
 .product-reviews-count::after {
     content: ')';
+    color: #b0bec5;
 }
+
+.pagination {
+    margin-top: 30px;
+}
+
+.pagination > li {
+    display: inline-block;
+}
+
+.pagination > li > a {
+    font-size: 1.07rem;
+    font-family: 'robotomedium', Helvetica, sans-serif;
+    border: 1px solid transparent;
+    color: inherit;
+    margin-left: 0;
+    padding: 12px 18px;
+    box-shadow: 0 1px 2px rgba(205, 214, 222, .75);
+}
+
+.pagination > li + li {
+    margin-left: 8px;
+}
+
+.pagination > li:first-child > a, .pagination > li:last-child > a {
+    border-radius: 0px;
+} 
+
+.pagination > li > a:hover {
+    border: 1px solid transparent;
+    color: #fff;
+    background-color: #e74c3c;
+}
+
 /*===== Default components end =====*/
 
 /*===== Custom styles start =====*/
@@ -431,6 +536,45 @@ textarea {
 .view-controls {
     padding: 20px;
     margin-bottom: 30px;
+    
+}
+
+.view-controls .dropdown-sort-by > i {
+    font-size: .93rem;
+    color: #455a64;
+}
+
+.view-controls .sort-by-option {
+    display: inline-block;
+    margin: 0 10px;
+    color: #707070;
+    font-size: .93rem;
+}
+
+.view-controls .btn-sort-by {
+    font-size: 1.2rem;
+    color: #707070;
+}
+
+
+.view-controls .change-view {
+    font-size: 1.07rem;
+}
+
+.view-controls .change-view > a + a {
+    margin-left: 14px;
+} 
+
+.view-controls .change-view .btn-change-view.active {
+    color: #8bc34a;
+}
+
+.view-controls .change-view .btn-change-view:not(.active) {
+    color: #90a4ae;
+}
+
+.view-controls .change-view .btn-change-view:not(.active):hover {
+    color: #8bc34a;
 }
 
 .all-items-wrap .card {

@@ -11,6 +11,9 @@
     <link rel="stylesheet" href="css/bootstrap-reboot.css">
     <!-- Bootstrap grid -->
     <link rel="stylesheet" href="css/bootstrap-grid.min.css">
+    <!-- TMP for slider, might be changed  -->
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css">
+    <style> #slider { margin-bottom: 25px; } </style>
     <!-- Styles -->
     <link rel="stylesheet" href="css/style.css">
 </head>
@@ -142,6 +145,7 @@
                             <div class="aside-section bg-white border-grey">
                                 <h3 class="aside-title">Price Range</h3>
                                 <!-- /.aside-title -->
+                                <div id="slider"></div>
                                 <button class="btn aside-btn bg-light-green"><i class="fas fa-search"></i> Search</button>
                             </div>
                             <!-- /.aside-section -->
@@ -766,7 +770,11 @@
     src="https://code.jquery.com/jquery-3.3.1.min.js"
     integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
     crossorigin="anonymous"></script>
+    <!-- TMP added for slider, might be changed -->
+    <script src="http://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     <!-- Bootstrap js -->
     <script src="js/bootstrap.min.js"></script>
+    <!-- Init plugins -->
+    <script src="js/init.js"></script>
 </body>
 </html>

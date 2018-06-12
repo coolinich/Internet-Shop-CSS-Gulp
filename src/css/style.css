@@ -145,7 +145,6 @@ textarea {
     font-family: 'robotomedium', Helvetica, sans-serif;
 }
 
-
 .breadcrumb {
     padding: 45px 0;
     background-color: inherit;
@@ -228,6 +227,7 @@ textarea {
 .aside-section .card-description .card-price {
     font-size: 1.07rem;
 }
+
 
 .card {
     box-shadow: 0 1px 2px rgba(205, 214, 222, .75);

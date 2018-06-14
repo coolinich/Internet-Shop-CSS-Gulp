@@ -151,7 +151,6 @@ textarea {
     font-family: 'robotomedium', Helvetica, sans-serif;
 }
 
-
 .breadcrumb {
     padding: 45px 0;
     background-color: inherit;
@@ -234,6 +233,7 @@ textarea {
 .aside-section .card-description .card-price {
     font-size: 1.07rem;
 }
+
 
 .card {
     -webkit-box-shadow: 0 1px 2px rgba(205, 214, 222, .75);
@@ -340,7 +340,19 @@ textarea {
     -webkit-box-shadow: 0 1px 2px rgba(205, 214, 222, .75);
        -moz-box-shadow: 0 1px 2px rgba(205, 214, 222, .75);
             box-shadow: 0 1px 2px rgba(205, 214, 222, .75);
+    background-color: #fff;
 }
+
+.pagination > li > a:hover {
+    color: #fff;
+    background-color: #e74c3c;
+}
+
+.pagination > li > a.active {
+    color: #fff;
+    background-color: #e74c3c;
+}
+
 
 .pagination > li + li {
     margin-left: 8px;
@@ -352,11 +364,6 @@ textarea {
             border-radius: 0px;
 } 
 
-.pagination > li > a:hover {
-    border: 1px solid transparent;
-    color: #fff;
-    background-color: #e74c3c;
-}
 
 /*===== Default components end =====*/
 

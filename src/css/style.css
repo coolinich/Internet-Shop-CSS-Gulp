@@ -538,7 +538,6 @@ textarea {
             transform: translateY(-50%);
 }
 /* inner end */
-/*===== Custom styles start =====*/
 /* all-items start */
 .view-controls {
     padding: 20px;
@@ -589,6 +588,9 @@ textarea {
 }
 
 /* all-items end */
-
-
+/* Range slider start */
+.range-slider-wrap {
+    margin-bottom: 45px;
+}
+/* Range slider end */
 /*===== Custom styles end =====*/

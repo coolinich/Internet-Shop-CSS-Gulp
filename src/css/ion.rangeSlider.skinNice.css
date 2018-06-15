@@ -22,25 +22,22 @@
     height: 60px;
 }
 .irs-line {
-    height: 8px; top: 25px;
+    height: 5px;
+    top: 25px;
+    background: #f2f5f8;
+    border-radius: 2px;
 }
-    .irs-line-left {
-        height: 8px;
-        background-position: 0 -30px;
-    }
-    .irs-line-mid {
-        height: 8px;
-        background-position: 0 0;
-    }
-    .irs-line-right {
-        height: 8px;
-        background-position: 100% -30px;
+    .irs-line-left,
+    .irs-line-mid,
+    .irs-line-right
+     {
+        height: 5px;
     }
 
 .irs-bar {
-    height: 8px;
+    height: 5px;
     top: 25px;
-    background-position: 0 -60px;
+    background: #37474f;
 }
     .irs-bar-edge {
         top: 25px;

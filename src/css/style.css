@@ -378,6 +378,10 @@ textarea {
     margin: 0 7px 0 20px;
 }
 
+.dropdown-item {
+    position: relative;
+}
+
 .dropdown-item + .dropdown-item {
     margin-left: 16px;
 }
@@ -392,6 +396,70 @@ textarea {
             border-radius: 50%;
     position: relative;
     cursor: pointer;
+}
+
+.dropdown-control[aria-expanded=true] {
+    color: #263238;
+}
+
+.dropdown-menu {
+    position: absolute;
+    display: none;
+    background-color: #fff;
+    z-index: 99;
+    border: 1px solid #d3d3d3;
+    min-width: 160px;
+    right: 0;
+    box-shadow: 0 12px 20px rgba(0, 0, 0, .2);
+    border-radius: 0;
+}
+
+.dropdown-menu.show {
+    display: block;
+    top: 26px!important;
+}
+
+.dropdown-menu.notifications {
+    min-width: 268px;
+}
+
+.dropdown-menu .dropdown-notify-item {
+    padding: 21px 30px 21px 20px;
+}
+
+.dropdown-menu .dropdown-notify-item .notify-item-avatar img {
+    width: 48px;
+    height: 48px;
+}
+
+.dropdown-menu .dropdown-notify-item + .dropdown-notify-item {
+    border-top: 1px solid #e0e0e0;
+}
+
+
+.dropdown-menu .dropdown-notify-item .notify-item-info {
+    margin-top: 5px;
+    margin-left: 20px;
+}
+
+.dropdown-menu .dropdown-notify-item .notify-item-info h6 {
+    color: #84b743;
+    font-size: .8rem;
+}
+
+.dropdown-menu .dropdown-notify-item .notify-item-info .notify-date {
+    color: #707070;
+    font-size: .67rem;
+}
+
+.dropdown-menu .dropdown-notify-item:hover i {
+    color: #ef6c00;
+}
+
+
+.dropdown-menu .dropdown-notify-item i {
+    margin-top: 5px;
+    font-size: 1.07rem;
 }
 
 .user-info-wrap {

@@ -73,6 +73,10 @@ textarea {
     background-color: #e74c3c;
 }
 
+.bg-light-red {
+    background-color: #e85647;
+}
+
 .bg-green {
     background-color: #95c85a;
 }
@@ -149,6 +153,15 @@ textarea {
        -moz-border-radius: 0;
             border-radius: 0;
     font-family: 'robotomedium', Helvetica, sans-serif;
+}
+
+.notify-btn {
+    -webkit-border-radius: 0;
+       -moz-border-radius: 0;
+            border-radius: 0;
+    font-family: 'robotobold', Helvetica, sans-serif;
+    font-size: .93rem;
+    color: #f4f6f5;
 }
 
 .breadcrumb {
@@ -399,6 +412,12 @@ textarea {
     position: relative;
 }
 
+.user-dropdown-control {
+    position: relative;
+    cursor: pointer;
+
+}
+
 .dropdown-item + .dropdown-item {
     margin-left: 16px;
 }
@@ -435,17 +454,43 @@ textarea {
             border-radius: 0;
 }
 
+.user-dropdown-control .dropdown-menu.show {
+    top: 24px!important;
+}
+
 .dropdown-menu.show {
     display: block;
     top: 26px!important;
 }
 
+
 .dropdown-menu.notifications {
-    min-width: 268px;
+    min-width: 270px;
 }
 
 .dropdown-menu .dropdown-notify-item {
     padding: 21px 30px 21px 20px;
+}
+
+.user-dropdown-control .dropdown-menu ul {
+    font-family: 'robotoregular', Helvetica, sans-serif;
+    font-size: .8rem;
+    color: #546e7a;
+    padding: 25px 19px;
+}
+
+.user-dropdown-control .default-chevron-list > li + li {
+    margin-top: 20px;
+}
+
+.user-dropdown-control .default-chevron-list > li > i {
+    color: #8bc34a;
+    margin-right: 8px;
+}
+
+
+.dropdown-menu .dropdown-notify-item.total-section {
+    padding: 17px 16px 9px 16px;
 }
 
 .dropdown-menu .dropdown-notify-item .notify-item-avatar img {
@@ -463,14 +508,59 @@ textarea {
     margin-left: 20px;
 }
 
+.dropdown-menu .dropdown-notify-item .notify-item-info.total-section-info {
+    margin: 0 18px 15px 12px;
+}
+
 .dropdown-menu .dropdown-notify-item .notify-item-info h6 {
     color: #84b743;
     font-size: .8rem;
 }
 
+.dropdown-menu .dropdown-notify-item .notify-item-info.email-notifications  h6 {
+    font-size: .73rem;
+}
+
+.dropdown-menu .dropdown-notify-item .notify-item-info.email-notifications  h5.author {
+    font-family: 'robotobold', Helvetica, sans-serif;
+    font-size: .8rem;
+    margin-bottom: 6px;
+}
+
+.dropdown-menu .dropdown-notify-item .notify-item-info.cart-notifications  h5.product-name {
+    font-family: 'robotomedium', Helvetica, sans-serif;
+    margin-bottom: 5px;
+}
+
+.dropdown-menu .dropdown-notify-item .notify-item-info.cart-notifications  .price {
+    font-family: 'robotomedium', Helvetica, sans-serif;
+    color: #000;
+    font-size: 1.07rem;
+    margin-top: 5px;
+    display: inline-block;
+}
+
+.dropdown-menu .dropdown-notify-item .notify-item-info.total-section-info .total-price {
+    font-family: 'robotobold', Helvetica, sans-serif;
+    font-size: 1.07rem;
+}
+
+
+.user-controls .total-section-btn > a {
+    margin-left: 0;
+}
+
+.user-controls .total-section-btn > a + a {
+    margin-left: 6px;
+}
+
 .dropdown-menu .dropdown-notify-item .notify-item-info .notify-date {
     color: #707070;
     font-size: .67rem;
+}
+
+.dropdown-menu .dropdown-notify-item .notify-item-info.email-notifications .notify-date {
+    color: #90a4ae;
 }
 
 .dropdown-menu .dropdown-notify-item:hover i {
@@ -481,6 +571,7 @@ textarea {
 .dropdown-menu .dropdown-notify-item i {
     margin-top: 5px;
     font-size: 1.07rem;
+    color: #b0bec5;
 }
 
 .user-info-wrap {
@@ -495,8 +586,6 @@ textarea {
     color: #707070;
 }
 
-
-
 .user-dropdown-control h6 {
     font-family: 'robotomedium', Helvetica, sans-serif;
     color: #222;
@@ -504,7 +593,7 @@ textarea {
     line-height: 1.6rem;
 }
 
-.user-dropdown-control span {
+.user-dropdown-control span.balance {
     font-family: 'robotobold', Helvetica, sans-serif;
     color: #8bc34a;
 }

@@ -127,15 +127,15 @@ textarea {
     border-radius: 3px;
 }
 
-.logout-btn {
+.md-btn {
     padding: 0 18px;
 }
 
-.login-btn {
+.lg-btn {
     padding: 0 20px;
 }
 
-.register-btn {
+.sm-btn {
     padding: 0 14px;
 }
 
@@ -380,11 +380,11 @@ textarea {
     margin-left: 30px;
 }
 
-.user-controls .logout-btn {
+.user-controls .md-btn {
     margin-left: 30px;
 }
 
-.user-controls .login-btn {
+.user-controls .lg-btn{
     margin-left: 20px;
     margin: 0 7px 0 20px;
 }

@@ -44,6 +44,12 @@ gulp.task('watch', ['css', 'cssmin', 'browser-sync'], function(){
 });
 
 
+// complete task
+// gulp.task('sprite', function(){
+//     var spriteData = gulp.src('src/sprite/*.png')
+//         .pipe(spritesmith)
+// }) 
+
 gulp.task('clean', function(){
     del.sync('app/css');
     del.sync('app/js');

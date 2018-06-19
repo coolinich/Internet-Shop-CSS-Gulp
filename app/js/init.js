@@ -10,4 +10,7 @@
         prefix: "$",
         hide_min_max: true
     });
+    //init carousel
+    $('.carousel').carousel();
 } )(jQuery);
+

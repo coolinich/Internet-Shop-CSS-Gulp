@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Store</title>
+    <!-- Font awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">    
+    <!-- Bootstrap reboot -->
+    <link rel="stylesheet" href="css/bootstrap-reboot.css">
+    <!-- Bootstrap grid -->
+    <link rel="stylesheet" href="css/bootstrap-grid.min.css">
+    <!-- ion range styles -->
+    <link rel="stylesheet" href="css/ion.rangeSlider.css">
+    <link rel="stylesheet" href="css/ion.rangeSlider.skinNice.css">
+    <!-- jQuery styler styles -->
+    <link rel="stylesheet" href="css/jquery.formstyler.css">
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header id="header" class="bg-white">
+        <div class="top-header container d-flex align-items-center">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="img/logo.png" alt="">
+                </a>
+            </div>
+            <!-- /.logo -->
+            <div class="need-help ml-auto">
+                <span><span>Need help?</span> Talk to an expert: <a href="tel:+61383766284">+61 3 8376 6284</a></span>
+            </div>
+            <!-- /.need-help -->
+            <div class="user-controls d-flex align-items-center">
+                <div class="dropdown-item">
+                    <div class="dropdown-control d-flex" id="dropdownMenuButton" data-toggle="dropdown">
+                        <i class="far fa-bell mx-auto my-auto"></i>
+                        <span class="notify-count bg-orange">8</span>
+                    </div>
+                    <div class="dropdown-menu notifications dropdown-menu-right" aria-labelledby="dropdownMenuButton">
+                        <a href="#" class="dropdown-notify-item d-flex">
+                            <div class="notify-item-avatar">
+                                <img src="img/notify-avatar.png" alt="">
+                            </div>
+                            <!-- /.notify-item-avatar -->
+                            <div class="notify-item-info">
+                                <h6>Need WP Help!</h6>
+                                <span class="notify-date">01 Dec, 2016</span>
+                            </div>
+                            <!-- /.notify-item-info -->
+                            <i class="far fa-bell ml-auto"></i>
+                        </a>
+                        <!-- /.dropdown-notify-item -->
+                        <a href="#" class="dropdown-notify-item d-flex">
+                            <div class="notify-item-avatar">
+                                <img src="img/notify-avatar.png" alt="">
+                            </div>
+                            <!-- /.notify-item-avatar -->
+                            <div class="notify-item-info">
+                                <h6>Need WP Help!</h6>
+                                <span class="notify-date">26 Nov, 2016</span>
+                            </div>
+                            <!-- /.notify-item-info -->
+                            <i class="far fa-bell ml-auto"></i>
+                        </a>
+                        <!-- /.dropdown-notify-item -->
+                        <a href="#" class="dropdown-notify-item d-flex">
+                            <div class="notify-item-avatar">
+                                <img src="img/notify-avatar.png" alt="">
+                            </div>
+                            <!-- /.notify-item-avatar -->
+                            <div class="notify-item-info">
+                                <h6>Psd Template Help!</h6>
+                                <span class="notify-date">26 Nov, 2016</span>
+                            </div>
+                            <!-- /.notify-item-info -->
+                            <i class="far fa-bell ml-auto"></i>
+                        </a>
+                        <!-- /.dropdown-notify-item -->                        
+                    </div>
+                    <!-- /.dropdown-menu notifications drop-down list -->
+                </div>
+                <!-- /.dropdown-item -->
+                <div class="dropdown-item">
+                    <div class="dropdown-control d-flex" id="dropdownMenuButton" data-toggle="dropdown">
+                        <i class="far fa-envelope mx-auto my-auto"></i>
+                        <span class="notify-count bg-red">5</span>
+                    </div>
+                    <div class="dropdown-menu notifications dropdown-menu-right" aria-labelledby="dropdownMenuButton">
+                        <a href="#" class="dropdown-notify-item d-flex">
+                            <div class="notify-item-avatar">
+                                <img src="img/notify-avatar.png" alt="">
+                            </div>
+                            <!-- /.notify-item-avatar -->
+                            <div class="notify-item-info email-notifications">
+                                <h5 class="author">Kazi Fahim</h5>
+                                <h6>Need WP Help!</h6>
+                                <span class="notify-date">01 Dec, 2016</span>
+                            </div>
+                            <!-- /.notify-item-info -->
+                            <i class="far fa-envelope ml-auto"></i>
+                        </a>
+                        <!-- /.dropdown-notify-item -->
+                        <a href="#" class="dropdown-notify-item d-flex">
+                            <div class="notify-item-avatar">
+                                <img src="img/notify-avatar.png" alt="">
+                            </div>
+                            <!-- /.notify-item-avatar -->
+                            <div class="notify-item-info email-notifications">
+                                <h5 class="author">Richi Lenal</h5>
+                                <h6>Need WP Help!</h6>
+                                <span class="notify-date">26 Nov, 2016</span>
+                            </div>
+                            <!-- /.notify-item-info -->
+                            <i class="far fa-envelope ml-auto"></i>
+                        </a>
+                        <!-- /.dropdown-notify-item -->
+                        <a href="#" class="dropdown-notify-item d-flex">
+                            <div class="notify-item-avatar">
+                                <img src="img/notify-avatar.png" alt="">
+                            </div>
+                            <!-- /.notify-item-avatar -->
+                            <div class="notify-item-info email-notifications">
+                                <h5 class="author">PsdBosS</h5>
+                                <h6>Psd Template Help!</h6>
+                                <span class="notify-date">26 Nov, 2016</span>
+                            </div>
+                            <!-- /.notify-item-info -->
+                            <i class="fas fa-reply ml-auto"></i>
+                        </a>
+                        <!-- /.dropdown-notify-item -->                        
+                    </div>
+                    <!-- /.dropdown-menu notifications drop-down list -->
+                </div>
+                <!-- /.dropdown-item -->
+                <div class="dropdown-item">
+                    <div class="dropdown-control d-flex" id="dropdownMenuButton" data-toggle="dropdown">
+                        <i class="fas fa-shopping-cart mx-auto my-auto"></i>
+                        <span class="notify-count bg-green">8</span>
+                    </div>
+                    <div class="dropdown-menu  notifications dropdown-menu-right" aria-labelledby="dropdownMenuButton">
+                        <a href="#" class="dropdown-notify-item d-flex align-items-center">
+                            <div class="notify-item-product-preview">
+                                <img src="img/product-preview.jpg" alt="">
+                            </div>
+                            <!-- /.notify-item-product-preview -->
+                            <div class="notify-item-info cart-notifications">
+                                <h5 class="product-name">Grand Ballet</h5>
+                                <h6>WordPress</h6>
+                                <span class="price">$59</span>
+                            </div>
+                            <!-- /.notify-item-info -->
+                        </a>
+                        <a href="#" class="dropdown-notify-item d-flex align-items-center">
+                            <div class="notify-item-product-preview">
+                                <img src="img/product-preview.jpg" alt="">
+                            </div>
+                            <!-- /.notify-item-product-preview -->
+                            <div class="notify-item-info cart-notifications">
+                                <h5 class="product-name">Apple Device</h5>
+                                <h6>WordPress</h6>
+                                <span class="price">$59</span>
+                            </div>
+                            <!-- /.notify-item-info -->
+                        </a>
+                        <div class="dropdown-notify-item total-section d-flex flex-column">
+                            <div class="notify-item-info total-section-info d-flex justify-content-between">
+                                <span class="total-price">Total</span>
+                                <span class="total-price">$118</span>
+                            </div>
+                            <!-- /.notify-item-info .total-section-->
+                            <div class="total-section-btn d-flex justify-content-between">
+                                <a href="#" class="btn bg-green md-btn notify-btn">Go to Cart</a>
+                                <a href="#" class="btn bg-light-red sm-btn notify-btn">Go to Checkout</a>
+                            </div>
+                            <!-- /.notify-item-info .total-section-->
+                        </div>
+                    </div>
+                    <!-- /.dropdown-menu notifications drop-down list -->
+                </div>
+                <!-- /.dropdown-item -->
+                <div class="user-dropdown-control">
+                    <div class="user-dropdown-control-wrapper d-flex align-items-center" id="dropdownMenuButton" data-toggle="dropdown">
+                        <img src="img/user-avatar.png" alt="" class="user-avatar">
+                        <div class="user-info-wrap">
+                            <h6>Mike Hussy <i class="fas fa-chevron-down"></i></h6>
+                            <span class="balance">$171</span>
+                        </div>                        
+                    </div>
+                    <!-- ./user-dropdown-control-wrapper-->
+                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
+                        <ul class="default-chevron-list">
+                            <li class="d-flex align-items-center">
+                                <i class="fas fa-chevron-right"></i>
+                                <span class="list-text">Profile Page</span>
+                            </li>
+                            <li class="d-flex align-items-center">
+                                <i class="fas fa-chevron-right"></i>
+                                <span class="list-text">Portfolio</span>
+                            </li>
+                            <li class="d-flex align-items-center">
+                                <i class="fas fa-chevron-right"></i>
+                                <span class="list-text">Account Setting</span>
+                            </li>
+                             <li class="d-flex align-items-center">
+                                <i class="fas fa-chevron-right"></i>
+                                <span class="list-text">Downloads</span>
+                            </li>
+                            <li class="d-flex align-items-center">
+                                <i class="fas fa-chevron-right"></i>
+                                <span class="list-text">Components</span>
+                            </li>
+                            <li class="d-flex align-items-center">
+                                <i class="fas fa-chevron-right"></i>
+                                <span class="list-text">Wishlist</span>
+                            </li>    
+                            <li class="d-flex align-items-center">
+                                <i class="fas fa-chevron-right"></i>
+                                <span class="list-text">Upload Item</span>
+                            </li>   
+                            <li class="d-flex align-items-center">
+                                <i class="fas fa-chevron-right"></i>
+                                <span class="list-text">Statement</span>
+                            </li>
+                            <li class="d-flex align-items-center">
+                                <i class="fas fa-chevron-right"></i>
+                                <span class="list-text">Withdraws</span>
+                            </li>                                                                             
+                        </ul>
+                    </div>
+                    <!-- /.dropdown-menu drop-down default list -->
+                </div>
+                <!-- /.user-dropdown-control -->
+
+                <button class="btn md-btn bg-dark-red">Logout</button>
+            </div>
+            <!-- /.user-controls -->
+        </div>
+        <!-- /.top-header -->
+        <div class="bottom-header bg-dark-blue">
+            <div class="container">
+                <nav class="header-nav">
+                    <a href="index.html">Home</a>
+                    <a href="all-items.html">About</a>
+                    <a href="#">WordPress</a>
+                    <a href="#">Joomla</a>
+                    <a href="#">PSD</a>
+                    <a href="#">Plugins</a>
+                    <a href="#">Components</a>
+                    <a href="all-items.html">Pages</a>
+                    <a href="#">Contact</a>
+                    <a href="#">Help</a>
+                </nav>
+                <!-- /.header-nav -->
+            </div>
+        </div>
+        <!-- /.bottom-header -->
+    </header>
+    <!-- /#header -->
+    <main id="main">
+        <div class="inner small-inner">
+            <div class="container">
+                <h3 class="inner-title inner-subtitle text-center">Premium WordPress Themes, Web Templates and Many More ...</h3>
+                <form>
+                    <div class="search-wrap">
+                        <input type="text" name="search" id="search" class="search-input" placeholder="Search Your Keywords . . .">
+                        <a href="" class="search-input-btn"><i class="fas fa-search"></i></a>    
+                    </div>
+                </form>
+            </div>
+        </div>
+        <!-- /#.inner.small-inner -->
+        <div class="content-wrapper">
+            <div class="container">
+                <ul class="breadcrumb">
+                    <li>
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="all-items.html">Product page</a>
+                    </li>
+                    <li class="active">Product details page</li>
+                </ul>
+                <!-- /.breadcrumb -->
+                <div class="row">
+                    <div class="col-md-9">
+                        <div class="product-info-wrap">
+                            <div class="product-banner">
+                                <img src="img/product_details_img.jpg" alt="">
+                            </div>
+                            <!-- /.product-banner -->
+                            <div class="product-description">
+                                <h5></h5>
+                                <p></p>
+                            </div>
+                            <!-- /.product-description -->
+                            <div class="d-flex">
+                                <a href="#" class="btn lg-btn bg-dark-red">Live Preview</a>
+                                <a href="#" class="btn xl-btn bg-dark-grey-blue">Screenshots</a>
+                                <a href="#" class="btn lg-btn bg-light-green">Documentation</a>
+                                <nav class="product-social ml-auto">
+                                    <a href="#" class="bg-violet-blue"><i class="fab fa-facebook-f"></i></a>
+                                    <a href="#" class="bg-light-blue"><i class="fab fa-twitter"></i></a>
+                                    <a href="#" class="bg-dodger-blue"><i class="fab fa-linkedin-in"></i></a>
+                                    <a href="#" class="bg-bright-red"><i class="fab fa-pinterest-p"></i></a>
+                                </nav>
+                                <!-- /nav.product-social -->
+                            </div>
+                            <div class="product-tabs bg-white border-grey">
+                                <ul class="nav nav-tabs d-flex" id="productTabs" role="tablist">
+                                    <li class="nav-item">
+                                        <a class="nav-link active" href="#item-features" id="item-features-tab" data-toggle="tab" role="tab" aria-controls="item-features" aria-selected="true">Item Features</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#item-comments" id="item-comments-tab" data-toggle="tab" role="tab" aria-controls="item-comments" aria-selected="false">Comments</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#item-reviews" id="item-reviews-tab" data-toggle="tab" role="tab" aria-controls="item-reviews" aria-selected="false">Reviews</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#item-support" id="item-support-tab" data-toggle="tab" role="tab" aria-controls="item-support" aria-selected="false">Support</a>
+                                    </li>                                                                
+                                </ul>
+                                <div class="tab-content" id="productTabContent">
+                                    <div class="tab-pane fade show active" id="item-features" role="tabpanel" aria-labelledby="item-features-tab">tab1</div>
+                                    <div class="tab-pane fade" id="item-comments" role="tabpanel" aria-labelledby="item-comments-tab">tab2</div>
+                                    <div class="tab-pane fade" id="item-reviews" role="tabpanel" aria-labelledby="item-reviews-tab">tab3</div>
+                                    <div class="tab-pane fade" id="item-support" role="tabpanel" aria-labelledby="item-support-tab">tab4</div>                                    
+                                </div>
+                                <!-- /#productTabs.nav nav-tabs -->
+                            </div>
+                            <!-- /.product-tabs -->
+                        </div>
+                        <!-- /.product-info-wrap -->
+                    </div>
+                    <!-- /.col-md-9 -->                    
+                    <div class="col-md-3">
+                        <aside id="aside">
+                            <div class="aside-section bg-white border-grey">
+                                <h3 class="aside-title">Product Price</h3>
+                                <!-- /.aside-title -->
+                                <a href="#" class="btn aside-btn bg-light-green"><i class="fas fa-shopping-cart"></i> Add To Cart</a>
+                                <a href="#" class="btn aside-btn bg-grey-blue"><i class="far fa-heart"></i> Add To Favourites</a>
+                                <a href="#" class="btn aside-btn bg-blue">Buy Now</a>
+                            </div>
+                            <!-- /.aside-section -->
+                            <div class="aside-section bg-white border-grey">
+                                <h3 class="aside-title">Product Author</h3>
+                                <!-- /.aside-title -->
+                                <div class="aside-product-author-info d-flex">
+                                    <div class="product-author-avatar">
+                                        <img src="img/product-preview.jpg" alt="">
+                                    </div>
+                                    <!-- /.notify-item-product-preview -->
+                                    <div class="product-author-info">
+                                        <h5 class="author">PsdBoss</h5>
+                                        <a href="#" class="btn xsm-btn bg-blue">View Profile</a>
+                                    </div>    
+                                </div>
+                                <!-- /.aside-product-author-info -->                            
+                            </div>
+                            <!-- /.aside-section -->
+                            <div class="aside-section bg-white border-grey">
+                                <div class="d-flex aside-sales">
+                                    <i class="fas fa-shopping-cart"></i>
+                                    <span class="sales-number">05</span>
+                                    <span class="sales-title">Sales</span>
+                                </div>
+                                <!-- /.d-flex aside-sales -->                
+                            </div>
+                            <!-- /.aside-section -->
+                            <div class="aside-section bg-white border-grey">
+                                <h3 class="aside-title">Product Information</h3>
+                                <!-- /.aside-title -->
+                                <ul class="product-info-list">
+                                    <li><span class="product-characteristic">Released On:</span> 1 January, 2016</li>
+                                    <li><span class="product-characteristic">Last Update:</span> 20 April, 2016</li>
+                                    <li><span class="product-characteristic"></span></li>
+                                    <li><span class="product-characteristic"></span></li>
+                                    <li><span class="product-characteristic"></span></li>
+                                    <li><span class="product-characteristic">Compatible Browsers:</span> IE9, IE10, IE11, Firefox, Safari, Opera, Chrome</li>
+                                </ul>
+                                <!-- /.product-info-list -->               
+                            </div>
+                            <!-- /.aside-section -->
+                        </aside>
+                        <!-- /#aside -->
+                    </div>
+                    <!-- /.col-md-3 -->
+                </div>
+            </div>
+        </div>
+        <!-- /.content-wrapper -->
+    </main>
+    <!-- /#main -->
+    <!-- jQuery -->
+    <script
+    src="https://code.jquery.com/jquery-3.3.1.min.js"
+    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
+    <!-- Bootstrap popper js for drop-downs -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <!-- Bootstrap js -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- ion range slider -->
+    <script src="js/ion.rangeSlider.min.js"></script>
+    <!-- jQuery styles js -->
+    <script src="js/jquery.formstyler.min.js"></script>
+    <!-- Init plugins -->
+    <script src="js/init.js"></script>
+</body>
+</html>

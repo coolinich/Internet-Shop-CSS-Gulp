@@ -229,6 +229,17 @@ textarea {
     color: #263238;
 }
 
+.bordered-title {
+    background-color: #fff;
+    font-size: 1.2rem;
+    line-height: 1.6rem;
+    padding: 17px 27px;
+    border: 1px solid #dfdfdf;
+    margin-top: 52px;
+    margin-bottom: 28px;
+}
+
+
 .aside-section {
     padding: 20px 30px 40px;
 }
@@ -289,6 +300,10 @@ textarea {
     font-size: 1.07rem;
 }
 
+.aside-section .aside-sales {
+    
+}
+
 
 .card {
     -webkit-box-shadow: 0 1px 2px rgba(205, 214, 222, .75);
@@ -299,6 +314,12 @@ textarea {
     -moz-transition: all .1s ease-in;
     transition: all .1s ease-in;
     position: relative;
+}
+
+.card:hover {
+    -webkit-box-shadow: 0 16px 20px rgba(216, 216, 216, .75);
+       -moz-box-shadow: 0 16px 20px rgba(216, 216, 216, .75);
+            box-shadow: 0 16px 20px rgba(216, 216, 216, .75);
 }
 
 .card.hot-product:before {
@@ -324,11 +345,7 @@ textarea {
     position: absolute;
 }
 
-.card:hover {
-    -webkit-box-shadow: 0 16px 20px rgba(216, 216, 216, .75);
-       -moz-box-shadow: 0 16px 20px rgba(216, 216, 216, .75);
-            box-shadow: 0 16px 20px rgba(216, 216, 216, .75);
-}
+
 
 
 .card-img img {
@@ -1057,6 +1074,7 @@ h2.section-title {
 .product-info-wrap .product-description p {
     color: #707070;
     font-size: 1.07rem;
+    line-height: 1.6rem;
 }
 
 .product-info-wrap .product-social > a {
@@ -1090,6 +1108,31 @@ h2.section-title {
     margin-left: 18px;
 }
 
+.more-products-wrapper .row + .row {
+    margin-top: 28px;
+}
+
+.more-products-wrapper .product-preview {
+    padding: 19px 17px 10px;
+}
+
+.more-products-wrapper .product-preview h5.product-name {
+    font-size: .93rem;
+    font-family: 'robotomedium', Helvetica, sans-serif;
+}
+
+.more-products-wrapper .product-preview h6 {
+    font-size: .8rem;
+    color: #8bc34a;
+    margin-top: 6px;
+    margin-bottom: 6px;
+}
+
+.more-products-wrapper .product-preview .price {
+    font-size: 1.2rem;
+    font-family: 'robotobold', Helvetica, sans-serif;
+}
+
 /* product tabs start */
 .product-info-wrap .product-tabs {
     margin-top: 55px;
@@ -1118,6 +1161,8 @@ h2.section-title {
 
 #productTabs .nav-link {
     padding: 20px 10px;
+    color: #70838d;
+    font-size: 1.07rem;
     text-align: center;
     display: block;
     border-bottom: 1px solid #dfdfdf;
@@ -1135,6 +1180,11 @@ h2.section-title {
     -o-transition: all .2s ease-in;
     -moz-transition: all .2s ease-in;
     transition: all .2s ease-in;
+}
+
+#productTabs .nav-link.active {
+    color: #263238;
+    font-family: 'robotomedium', Helvetica, sans-serif;
 }
 
 #productTabs .nav-link.active::after {

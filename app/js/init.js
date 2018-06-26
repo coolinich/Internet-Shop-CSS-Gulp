@@ -18,12 +18,10 @@
 // if ($( '.prodcuts-tabs' ).length) {
 //     $( '.prodcuts-tabs' ).tabs();
 // }
-// // Init jquery form stayler
-// if ($('.form-control, .input-file-styler').length) {
-//     $('.form-control, .input-file-styler').styler();
-//}
-
-
+    //Init jquery form styler
+    if ($('.select-styler, .form-control, .input-file-styler').length) {
+        $('.select-styler, .form-control, .input-file-styler').styler();
+    }
 
 } )(jQuery);
 

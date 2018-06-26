@@ -278,35 +278,254 @@
                     <li>
                         <a href="index.html">Home</a>
                     </li>
-                    <li class="active">Product page</li>
+                    <li class="active">Upload Product</li>
                 </ul>
                 <!-- ./breadcrumb -->
                 <div class="upload-product-content bg-white border-grey">
-                    <h3 class="head-title">Upload Yout item</h3>
-                    <div class="form-body">
-                        <div class="row">
-                            <div class="col-3">
-                                <label for="category">Select Category <sup>*</sup></label>
+                    <form>
+                        <h3 class="head-title">Upload Your item</h3>
+                        <div class="form-body">
+                            <div class="row d-flex align-items-center">
+                                <div class="col-3">
+                                    <label for="category">Select Categories<sup>*</sup></label>
+                                </div>
+                                <!-- /.col-3 -->
+                                <div class="col-8">
+                                    <select name="category" id="category" class="select-styler">
+                                        <option value="">Category 1</option>
+                                        <option value="">Category 2</option>
+                                    </select> 
+                                    <!-- /#select-->                         
+                                </div>
+                                <!-- /.col-8 -->
                             </div>
-                            <!-- /.col-3 -->
-                            <div class="col-8">
-                                <select name="category" id="category" class="form-control select-styler">
-                                    <option value="">Category 1</option>
-                                    <option value="">Category 2</option>
-                                </select> 
-                                <!-- /# select-->
+                            <!-- /.row d-flex align-items-center -->
+                            <div class="row d-flex align-items-center">
+                                <div class="col-3">
+                                    <label for="product-name">Product Name<sup>*</sup></label>
+                                </div>
+                                <!-- /.col-3 -->
+                                <div class="col-8">
+                                    <input type="text" name="product-name" id="product-name" class="form-control" placeholder="Enter your product name here ...">
+                                </div>
+                                <!-- /.col-8 -->
                             </div>
-                            <!-- /.col-8 -->
+                            <!-- /.row -->
+                            <div class="row">
+                                <div class="col-3">
+                                    <label for="product-description">Product Description<sup>*</sup></label>
+                                </div>
+                                <!-- /.col-3 -->
+                                <div class="col-8">
+                                    <textarea name="product-description" id="product-description" cols="30" rows="10" class="form-control" placeholder="&lt;h1&gt; Type your text  here &lt;&sol;h1&gt;"></textarea>
+                                </div>
+                                <!-- /.col-8 -->
+                            </div>
+                            <!-- /.row -->
+                            <div class="row d-flex align-items-center">
+                                <div class="col-3">
+                                    <label for="upload-main-file">Upload Main File<sup>*</sup></label>
+                                </div>
+                                <!-- /.col-3 -->
+                                <div class="col-8">
+                                    <input type="file" name="upload-main-file" id="upload-main-file" class="form-control">
+                                </div>
+                                <!-- /.col-8 -->
+                            </div>
+                            <!-- /.row d-flex align-items-center -->
+                            <div class="row d-flex align-items-center">
+                                <div class="col-3">
+                                    <label for="upload-screenshots">Upload Screenshots<sup>*</sup></label>
+                                </div>
+                                <!-- /.col-3 -->
+                                <div class="col-8">
+                                    <input type="file" name="upload-screenshots" id="upload-screenshots" class="form-control">
+                                </div>
+                                <!-- /.col-8 -->
+                            </div>
+                            <!-- /.row d-flex align-items-center -->
+                            <div class="row d-flex align-items-center">
+                                <div class="col-3">
+                                    <label for="file-type">File Included<sup>*</sup></label>
+                                </div>
+                                <!-- /.col-3 -->
+                                <div class="col-8">
+                                    <select name="file-type" id="file-type" class="select-styler">
+                                        <option value="">file type 1</option>
+                                        <option value="">file type 2</option>
+                                    </select> 
+                                    <!-- /#select-->                         
+                                </div>
+                                <!-- /.col-8 -->
+                            </div>
+                            <!-- /.row d-flex align-items-center -->
+                            <div class="row d-flex align-items-center">
+                                <div class="col-3">
+                                    <label for="file-dimensions">File Dimensions<sup>*</sup></label>
+                                </div>
+                                <!-- /.col-3 -->
+                                <div class="col-8">
+                                    <input type="text" name="file-dimensions" id="file-dimensions" class="form-control" placeholder="Enter the item  dimensions here ...">
+                                </div>
+                                <!-- /.col-8 -->
+                            </div>
+                            <!-- /.row d-flex align-items-center -->
+                            <div class="row d-flex align-items-center">
+                                <div class="col-3">
+                                    <label for="item-tags">Item Tags<sup>*</sup></label>
+                                </div>
+                                <!-- /.col-3 -->
+                                <div class="col-8">
+                                    <input type="text" name="item-tags" id="item-tags" class="form-control" placeholder="Enter Tag Here">
+                                </div>
+                                <!-- /.col-8 -->
+                            </div>
+                            <!-- /.row d-flex align-items-center -->                         
                         </div>
-                        <!-- /.row -->
-                    </div>
-                    <!-- /.form-body -->
+                        <!-- /.form-body -->
+                        <h3 class="head-title">Set Your Price (US$)</h3>                        
+                        <div class="form-body">
+                            <div class="row d-flex align-items-center">
+                                <div class="col-3">
+                                    <label for="regular-license">Regular License<sup>*</sup></label>
+                                </div>
+                                <!-- /.col-3 -->
+                                <div class="col-8">
+                                    <input type="text" name="regular-license" id="regular-license" class="form-control" placeholder="$00.00">
+                                </div>
+                                <!-- /.col-8 -->
+                            </div>
+                            <!-- /.row d-flex align-items-center -->
+                            <div class="row d-flex align-items-center">
+                                <div class="col-3">
+                                    <label for="extended-license">Extended License<sup>*</sup></label>
+                                </div>
+                                <!-- /.col-3 -->
+                                <div class="col-8">
+                                    <input type="text" name="extended-license" id="extended-license" class="form-control" placeholder="$00.00">
+                                </div>
+                                <!-- /.col-8 -->
+                            </div>
+                            <!-- /.row d-flex align-items-center -->
+                            <div class="row d-flex align-items-center">
+                                <div class="col-8 offset-md-3">
+                                    <button type="submit" class="submit-btn bg-light-green">Submit</button>
+                                </div>
+                            </div>
+                            <!-- /.row d-flex align-items-center -->                 
+                        </div>
+                        <!-- /.form-body -->
+                    </form>
+                    <!-- /.form -->
                 </div>
             </div>
         </div>
         <!-- .content-wrapper -->
     </main>
     <!-- /#main -->
+    <footer id="footer" class="bg-dark-blue">
+        <div class="container">
+            <div class="row">
+                <div class="col-3">
+                    <h3 class="footer-title">About Company</h3>
+                    <!-- /.footer-title -->
+                    <p class="footer-text">Praesent vel rutrum purus. Nam vel dui eu risus duis dignissim digniSuspen disse.Fusce sit amet urna iat.Praesent vel rutrum purus.</p>
+                    <div class="address-wrapper d-flex">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span class="address">PO Box 16122 Collins Street West Victoria 8007 Australia</span>
+                    </div>
+                    <div class="phone-wrapper">
+                        <i class="fas fa-phone"></i>
+                        <span class="phone">+61 3 8376 6284</span>
+                    </div>
+                </div>
+                <!-- /.col-3 -->
+                <div class="col-3">
+                    <h3 class="footer-title">Join Our Community</h3>
+                    <!-- /.footer-title -->
+                    <ul class="default-chevron-list">
+                        <li class="d-flex align-items-center">
+                            <i class="fas fa-chevron-right"></i>
+                            <span class="list-text">Home</span>
+                        </li>
+                        <li class="d-flex align-items-center">
+                            <i class="fas fa-chevron-right"></i>
+                            <span class="list-text">Forums</span>
+                        </li>
+                        <li class="d-flex align-items-center">
+                            <i class="fas fa-chevron-right"></i>
+                            <span class="list-text">Become an Author</span>
+                        </li>
+                         <li class="d-flex align-items-center">
+                            <i class="fas fa-chevron-right"></i>
+                            <span class="list-text">Community Meetups</span>
+                        </li>
+                        <li class="d-flex align-items-center">
+                            <i class="fas fa-chevron-right"></i>
+                            <span class="list-text">Become an Affiliate</span>
+                        </li>
+                    </ul>                                        
+                </div>
+                <!-- /.col-3 -->
+                <div class="col-3">
+                    <h3 class="footer-title">Need Help?</h3>
+                    <!-- /.footer-title -->
+                    <ul class="default-chevron-list">
+                        <li class="d-flex align-items-center">
+                            <i class="fas fa-chevron-right"></i>
+                            <span class="list-text">Help Center</span>
+                        </li>
+                        <li class="d-flex align-items-center">
+                            <i class="fas fa-chevron-right"></i>
+                            <span class="list-text">Foxtar Market Terms</span>
+                        </li>
+                        <li class="d-flex align-items-center">
+                            <i class="fas fa-chevron-right"></i>
+                            <span class="list-text">Author Terms</span>
+                        </li>
+                         <li class="d-flex align-items-center">
+                            <i class="fas fa-chevron-right"></i>
+                            <span class="list-text">Foxtar Licenses</span>
+                        </li>
+                        <li class="d-flex align-items-center">
+                            <i class="fas fa-chevron-right"></i>
+                            <span class="list-text">Contact Us</span>
+                        </li>
+                    </ul>                                        
+                </div>
+                <!-- /.col-3 -->
+                <div class="col-3">
+                    <h3 class="footer-title">Follow Us On</h3>
+                    <!-- /.footer-title -->
+                    <ul class="social-nav d-flex">
+                        <li><a href="#" class="icon icon-fb-ic"></a></li>
+                        <li><a href="#" class="icon icon-twitter-ic"></a></li>
+                        <li><a href="#" class="icon icon-youtube-ic"></a></li>
+                        <li><a href="#" class="icon icon-pinterest-ic"></a></li>
+                        <li><a href="#" class="icon icon-in-ic"></a></li>
+                    </ul>
+                    <!-- /.social-nav -->
+                    <span class="signup-text">Newsletter Sign Up!</span>
+                    <div class="subscribe-form-wrapper">
+                        <form class="d-flex">
+                            <input type="email" name="email" id="email" placeholder="E-mail Address">
+                            <button type="submit"><i class="fas fa-location-arrow"></i></button>
+                        </form>
+                    </div>
+                    <!-- /.subscribe-form-wrapper -->
+
+                </div>
+                <!-- /.col-3 -->
+            </div>
+            <!-- /.row -->
+        </div>
+        <!-- /.container -->
+        <div class="copyrights text-center">
+            <span class="copyrights-text">© 2017 Foxtar market place. Trademarks and brands are the property of their respective owners.</span>
+        </div>
+        <!-- /.copyrights -->
+    </footer>
+    <!-- /#footer-->    
     <!-- jQuery -->
     <script
     src="https://code.jquery.com/jquery-3.3.1.min.js"

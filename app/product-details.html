@@ -24,7 +24,7 @@
 </head>
 <body>
     <header id="header" class="bg-white">
-        <div class="top-header container d-flex align-items-center">
+        <div class="top-header container d-flex align-items-center flex-wrap">
             <div class="logo">
                 <a href="index.html">
                     <img src="img/logo.png" alt="">
@@ -35,7 +35,7 @@
                 <span><span>Need help?</span> Talk to an expert: <a href="tel:+61383766284">+61 3 8376 6284</a></span>
             </div>
             <!-- /.need-help -->
-            <div class="user-controls d-flex align-items-center">
+            <div class="user-controls d-flex align-items-center justify-content-around justify-content-lg-start">
                 <div class="dropdown-item">
                     <div class="dropdown-control d-flex" id="dropdownMenuButton" data-toggle="dropdown">
                         <i class="far fa-bell mx-auto my-auto"></i>
@@ -289,8 +289,13 @@
                     <li class="active">GT Builder Construction</li>
                 </ul>
                 <!-- /.breadcrumb -->
+                <div class="overlay"></div>
+                <!-- /.overlay -->
                 <div class="row">
                     <div class="col-12 col-lg-9">
+                        <div class="mobile-aside-toggle">
+                            <i class="fab fa-elementor"></i>
+                        </div>
                         <div class="product-info-wrap">
                             <div class="product-banner">
                                 <img src="img/product-details-xl-img.jpg" alt="">
@@ -301,11 +306,13 @@
                                 <p>Bmply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived noning essentially unchanged.</p>
                             </div>
                             <!-- /.product-description -->
-                            <div class="d-flex">
-                                <a href="#" class="btn lg-btn product-btn bg-dark-red">Live Preview</a>
-                                <a href="#" class="btn xl-btn product-btn bg-dark-grey-blue">Screenshots</a>
-                                <a href="#" class="btn lg-btn product-btn bg-light-green">Documentation</a>
-                                <nav class="product-social ml-auto">
+                            <div class="d-flex justify-content-between">
+                                <div class="product-actions d-flex flex-xl-row flex-column align-items-center">
+                                    <a href="#" class="btn lg-btn product-btn bg-dark-red">Live Preview</a>
+                                    <a href="#" class="btn lg-btn product-btn bg-dark-grey-blue">Screenshots</a>
+                                    <a href="#" class="btn lg-btn product-btn bg-light-green">Documentation</a>                                    
+                                </div>
+                                <nav class="product-social ml-auto d-flex flex-md-row flex-column">
                                     <a href="#" class="bg-violet-blue"><i class="fab fa-facebook-f"></i></a>
                                     <a href="#" class="bg-light-blue"><i class="fab fa-twitter"></i></a>
                                     <a href="#" class="bg-dodger-blue"><i class="fab fa-linkedin-in"></i></a>
@@ -314,7 +321,7 @@
                                 <!-- /nav.product-social -->
                             </div>
                             <div class="product-tabs bg-white border-grey">
-                                <ul class="nav nav-tabs d-flex" id="productTabs" role="tablist">
+                                <ul class="nav nav-tabs d-flex flex-sm-wrap flex-md-nowrap flex-sm-row flex-column" id="productTabs" role="tablist">
                                     <li class="nav-item">
                                         <a class="nav-link active" href="#item-features" id="item-features-tab" data-toggle="tab" role="tab" aria-controls="item-features" aria-selected="true">Item Features</a>
                                     </li>
@@ -382,7 +389,7 @@
                             <!-- /.bordered-title -->
                             <div class="more-products-wrapper">
                                 <div class="row">
-                                    <div class="col-4">
+                                    <div class="col-lg-6 col-xl-4">
                                         <a href="#" class="card bg-white d-flex">
                                             <div class="product-preview-img">
                                                 <img src="img/product-preview-md.jpg" alt="">
@@ -397,8 +404,8 @@
                                         </a>
                                         <!-- /.small-card bg-white -->
                                     </div>
-                                    <!-- /.col-4 -->
-                                    <div class="col-4">
+                                    <!-- /.col-lg-6 col-xl-4 -->
+                                    <div class="col-lg-6 col-xl-4">
                                         <a href="#" class="card bg-white d-flex">
                                             <div class="product-preview-img">
                                                 <img src="img/product-preview-md.jpg" alt="">
@@ -413,8 +420,8 @@
                                         </a>
                                         <!-- /.small-card bg-white -->
                                     </div>
-                                    <!-- /.col-4 -->
-                                    <div class="col-4">
+                                    <!-- /.col-lg-6 col-xl-4 -->
+                                    <div class="col-lg-6 col-xl-4">
                                         <a href="#" class="card bg-white d-flex">
                                             <div class="product-preview-img">
                                                 <img src="img/product-preview-md.jpg" alt="">
@@ -429,11 +436,8 @@
                                         </a>
                                         <!-- /.small-card bg-white -->
                                     </div>
-                                    <!-- /.col-4 -->                                                                      
-                                </div>
-                                <!-- /.row -->
-                                <div class="row">
-                                    <div class="col-4">
+                                    <!-- /.col-lg-6 col-xl-4 -->                                                                      
+                                    <div class="col-lg-6 col-xl-4">
                                         <a href="#" class="card bg-white d-flex">
                                             <div class="product-preview-img">
                                                 <img src="img/product-preview-md.jpg" alt="">
@@ -448,8 +452,8 @@
                                         </a>
                                         <!-- /.small-card bg-white -->
                                     </div>
-                                    <!-- /.col-4 -->
-                                    <div class="col-4">
+                                    <!-- /.col-lg-6 col-xl-4 -->
+                                    <div class="col-lg-6 col-xl-4">
                                         <a href="#" class="card bg-white d-flex">
                                             <div class="product-preview-img">
                                                 <img src="img/product-preview-md.jpg" alt="">
@@ -464,8 +468,8 @@
                                         </a>
                                         <!-- /.small-card bg-white -->
                                     </div>
-                                    <!-- /.col-4 -->
-                                    <div class="col-4">
+                                    <!-- /.col-lg-6 col-xl-4 -->
+                                    <div class="col-lg-6 col-xl-4">
                                         <a href="#" class="card bg-white d-flex">
                                             <div class="product-preview-img">
                                                 <img src="img/product-preview-md.jpg" alt="">
@@ -480,7 +484,7 @@
                                         </a>
                                         <!-- /.small-card bg-white -->
                                     </div>
-                                    <!-- /.col-4 -->                                                                      
+                                    <!-- /.col-lg-6 col-xl-4 -->                                                                      
                                 </div>
                                 <!-- /.row -->                                
                             </div>
@@ -490,6 +494,8 @@
                     </div>
                     <!-- /.col-md-9 -->                    
                     <div class="col-12 col-lg-3 mobile-aside right">
+                        <button class="close-mobile-aside"><i class="fas fa-times"></i></button> 
+                        <!-- /.close-mobile-aside -->
                         <aside id="aside">
                             <div class="aside-section bg-white border-grey">
                                 <h3 class="aside-title">Product Price</h3>
@@ -577,7 +583,7 @@
     <footer id="footer" class="bg-dark-blue">
         <div class="container">
             <div class="row">
-                <div class="col-3">
+                <div class="col-sm-12 col-md-6 col-xl-3">
                     <h3 class="footer-title">About Company</h3>
                     <!-- /.footer-title -->
                     <p class="footer-text">Praesent vel rutrum purus. Nam vel dui eu risus duis dignissim digniSuspen disse.Fusce sit amet urna iat.Praesent vel rutrum purus.</p>
@@ -590,8 +596,8 @@
                         <span class="phone">+61 3 8376 6284</span>
                     </div>
                 </div>
-                <!-- /.col-3 -->
-                <div class="col-3">
+                <!-- /.col-sm-12 col-md-6 col-xl-3 -->
+                <div class="col-sm-12 col-md-6 col-xl-3">
                     <h3 class="footer-title">Join Our Community</h3>
                     <!-- /.footer-title -->
                     <ul class="default-chevron-list">
@@ -617,8 +623,8 @@
                         </li>
                     </ul>                                        
                 </div>
-                <!-- /.col-3 -->
-                <div class="col-3">
+                <!-- /.col-sm-12 col-md-6 col-xl-3 -->
+                <div class="col-sm-12 col-md-6 col-xl-3">
                     <h3 class="footer-title">Need Help?</h3>
                     <!-- /.footer-title -->
                     <ul class="default-chevron-list">
@@ -644,8 +650,8 @@
                         </li>
                     </ul>                                        
                 </div>
-                <!-- /.col-3 -->
-                <div class="col-3">
+                <!-- /.col-sm-12 col-md-6 col-xl-3 -->
+                <div class="col-sm-12 col-md-6 col-xl-3">
                     <h3 class="footer-title">Follow Us On</h3>
                     <!-- /.footer-title -->
                     <ul class="social-nav d-flex">
@@ -666,7 +672,7 @@
                     <!-- /.subscribe-form-wrapper -->
 
                 </div>
-                <!-- /.col-3 -->
+                <!-- /.col-sm-12 col-md-6 col-xl-3 -->
             </div>
             <!-- /.row -->
         </div>
@@ -690,6 +696,8 @@
     <script src="js/ion.rangeSlider.min.js"></script>
     <!-- jQuery styles js -->
     <script src="js/jquery.formstyler.min.js"></script>
+    <!-- Aside js -->
+    <script src="js/aside.js"></script>
     <!-- Init plugins -->
     <script src="js/init.js"></script>
 </body>

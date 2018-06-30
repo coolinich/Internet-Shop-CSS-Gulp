@@ -52,5 +52,10 @@
         $('.select-styler, .form-control, .input-file-styler').styler();
     }
 
+    $('.header-nav').slicknav({
+      appendTo: '#header .bottom-header .container',
+      label: ''
+    });
+
 } )(jQuery);
 

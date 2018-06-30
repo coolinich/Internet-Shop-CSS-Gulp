@@ -907,11 +907,21 @@ textarea.form-control {
 }
 
 @media(max-width: 991px) {
+    .bottom-header .header-nav {
+        display: none;
+    }
+
+    .slicknav_menu {
+        display: block;
+
+    }
+
+
     .user-controls {
         width: 100%;
         margin-top: 30px;
         margin-left: 0;
- }
+    }
 }
 
 @media(max-width: 576px) {

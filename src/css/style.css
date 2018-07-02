@@ -1065,7 +1065,7 @@ textarea.form-control {
 
 @media (max-width: 1199px) {
     #footer .col-md-6 {
-        margin-bottom: 20px;
+        margin-bottom: 30px;
     }
 }
 
@@ -1327,6 +1327,10 @@ h2.section-title {
     .form-body label {
         padding-left: 0;
     }
+
+    .form-body .submit-btn {
+        width: 100%;
+    }
 } 
 
 /* Upload product Form end */
@@ -1540,10 +1544,12 @@ h2.section-title {
     bottom: 0;
     left: 50%;
     transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
 }
 
 .slick-dots li {
-    float: left;
+    /* float: left; */
 }
 
 .slick-dots li + li{
@@ -1595,13 +1601,17 @@ h2.section-title {
 }
 
 .become-author-wrap .become-author-controls {
-    padding: 60px 60px 75px;
+    padding: 60px;
 }
 
 .become-author-wrap .become-author-controls h3.become-author-title {
     color: #fff;
     font-size: 2rem;
     line-height: 2.33rem;
+}
+
+.become-author-wrap .become-author-controls h3.become-author-title span {
+    font-family: 'robotobold', Helvetica, sans-serif;    
 }
 
 .tutorials-wrap .tutorial-item-wrap h3.tutorial-title {
@@ -1611,9 +1621,24 @@ h2.section-title {
     background-color: #f8f8f8;
 }
 
+@media(max-width: 991px) {
+    .tutorials-wrap .tutorial-item-wrap h3.tutorial-title {
+        line-height: 3rem;
+    }
+}
+
+
 @media(max-width: 767px) {
     .benefits-items-wrap .benefit-item {
         margin-bottom: 30px;
+    }
+
+    .tutorials-wrap .tutorial-item-wrap {
+        margin-bottom: 30px;
+    }
+
+    .slick-dots {
+        width: 100%;
     }
 }
 

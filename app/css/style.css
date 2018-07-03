@@ -361,11 +361,26 @@ textarea.form-control {
 }
 
 .aside-section .dropdown-price {
-    /* position: relative; */
+    position: relative;
+    cursor: pointer;
 }
 
-.aside-section .dropdown-menu.select-price {
+.aside-section .dropdown-menu.dropdown-select-price {
     min-width: 80px;
+    padding: 0 4px;
+    display: none!important;
+}
+
+.aside-section .dropdown-menu.dropdown-select-price.show {
+    top: 0;
+    display: block!important;
+}
+
+
+.aside-section .dropdown-menu.dropdown-select-price a {
+    color: #70838d;
+    font-size: .87rem;
+    line-height: 1.67rem;
 }
 
 .aside-section .selected-price {
@@ -379,7 +394,7 @@ textarea.form-control {
     color: #70838d;
     font-size: .87rem;
     line-height: 1.67rem;
-    border: 1px solid #d5d5d5;   
+    border: 1px solid #d5d5d5;
 }
 
 .aside-section .dropdown-price-btn > i {
@@ -739,8 +754,8 @@ textarea.form-control {
 .user-dropdown-control {
     position: relative;
     cursor: pointer;
-
 }
+
 
 .dropdown-item + .dropdown-item {
     margin-left: 16px;
@@ -785,12 +800,14 @@ textarea.form-control {
 
 .dropdown-menu.show {
     display: block;
-    top: 26px!important;
 }
-
 
 .dropdown-menu.notifications {
     min-width: 270px;
+}
+
+.dropdown-menu.notifications.show {
+    top: 26px!important;
 }
 
 .dropdown-menu .dropdown-notify-item {
@@ -1716,20 +1733,41 @@ h2.section-title {
     color: #b0bec5;
 }
 
-.become-author-wrap .become-author-bg-img {
-    -webkit-box-shadow: 0 1px 2px rgba(69, 90, 100, .75);
-       -moz-box-shadow: 0 1px 2px rgba(69, 90, 100, .75);
-            box-shadow: 0 1px 2px rgba(69, 90, 100, .75);
+
+/* Option #2 to make image under the block with text and button */
+.section-wrapper.become-author-wrap .container {
+    background-image: url('../img/become-author-bg.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    -moz-background-size: contain;
+      -o-background-size: contain;
+         background-size: contain;
+    padding: 235px 0;
 }
 
+/* Option #1 to make image under the block with text and button */
+/* .section-wrapper.become-author-wrap .container {
+    position: relative;
+    text-align: center;
+}
+
+.become-author-controls {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+} */
+
+
 .become-author-wrap .become-author-controls {
-    padding: 60px;
+    padding: 70px 60px 82px;
 }
 
 .become-author-wrap .become-author-controls h3.become-author-title {
     color: #fff;
     font-size: 2rem;
-    line-height: 2.33rem;
+    line-height: 2.4rem;
+    margin-right: 40px;
 }
 
 .become-author-wrap .become-author-controls h3.become-author-title span {
@@ -1744,6 +1782,25 @@ h2.section-title {
 }
 
 @media(max-width: 991px) {
+    .section-wrapper.become-author-wrap {
+        padding: 55px 0;
+    }
+
+    .section-wrapper.become-author-wrap .container {
+        padding: 135px 0;
+    }
+
+    .become-author-wrap .become-author-controls {
+        padding: 35px 30px 40px;
+    }  
+
+    .become-author-wrap .become-author-controls h3.become-author-title {
+        font-size: 1.6rem;
+        line-height: 2rem;
+        margin-right: 0px;
+        margin-bottom: 20px;
+    }
+
     .tutorials-wrap .tutorial-item-wrap h3.tutorial-title {
         line-height: 3rem;
     }
@@ -1751,6 +1808,10 @@ h2.section-title {
 
 
 @media(max-width: 767px) {
+    .section-wrapper.become-author-wrap .container {
+        background-image: none;
+    }
+
     .benefits-items-wrap .benefit-item {
         margin-bottom: 30px;
     }

@@ -6,6 +6,9 @@ var gulp = require('gulp'),
     del = require('del'),
     spritesmith = require('gulp.spritesmith'),
     merge = require('merge-stream'),
+    concat = require('gulp-concat'),
+    babel = require('gulp-babel'),
+    minifyjs = require('gulp-js-minify'),
     browserSync = require('browser-sync');
 
 gulp.task('css', function(){
@@ -23,7 +26,7 @@ gulp.task('cssmin', function(){
         "!app/css/style.min.css"
 
     ])
-    .pipe(concat(styles.css))
+    .pipe(concat("styles.css"))
     .pipe(minifycss())
     .pipe(rename('style.min.css'))
     .pipe(gulp.dest('app/css/'))
@@ -66,6 +69,17 @@ gulp.task('sprite', function() {
 }); 
 
 
+gulp.task('js', function(){
+    return gulp.src('app/js/main/**/*.js')
+        .pipe(babel({
+            presets: ["env"]
+        }))
+        .pipe(concat('scripts.js'))
+        // .pipe(minifyjs())
+        // .pipe(rename('scripts.min.js'))
+        .pipe(gulp.dest('app/js'));
+});
+
 gulp.task('watch', ['css', 'cssmin', 'sprite', 'browser-sync'], function(){
     gulp.watch('src/css/**/*.css', ['css']);
     gulp.watch('app/css/style.css', ['cssmin']);
@@ -80,20 +94,9 @@ gulp.task('clean', function(){
 //add all other folders which should be removed in /app/ before build-task
 })
 
-//here in list of tasks also 'tinypng' should be added
-gulp.task('build', ['clean', 'css', 'cssmin'], function(){
-//this one will be unnecessary if 'tinypng' is present in tasks list 
-    gulp.src('src/img/**/*.+(jpg|png|jpeg)')
-    .pipe(gulp.dest('app/img'));
-
-    gulp.src('src/fonts/**/*.*')
-    .pipe(gulp.dest('app/fonts'));
-
-//here should be handler for JS files
-    gulp.src('src/js/**/*.*')
-    .pipe(gulp.dest('app/js'));
-
-
+//here in list of all tasks for PRD build 
+gulp.task('build', ['css', 'cssmin', 'tinypng', 'js'], function(){
+//for case if any html is present in src
     gulp.src('src/*.html')
     .pipe(gulp.dest('app/'));
 

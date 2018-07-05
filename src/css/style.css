@@ -931,9 +931,8 @@ textarea.form-control {
         display: none;
     }
 
-    .slicknav_menu {
+    .bottom-header .slicknav_menu {
         display: block;
-
     }
 
     .user-controls {
@@ -964,6 +963,11 @@ textarea.form-control {
 
     .dropdown-menu.notifications.show {
         top: 10px!important;
+    }
+
+    .user-controls .md-btn.logout-btn {
+        margin: 30px 10px 0 10px;
+        width: 100%;
     }
 
     .breadcrumb {
@@ -1368,6 +1372,12 @@ h2.section-title {
         width: 100%;
     }
 } 
+
+@media(max-width: 575px) {
+    .upload-product-content {
+        margin-top: 20px;
+    }
+}
 
 /* Upload product Form end */
 

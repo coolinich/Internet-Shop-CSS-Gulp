@@ -51,7 +51,8 @@
     if ($('.select-styler, .form-control, .input-file-styler').length) {
         $('.select-styler, .form-control, .input-file-styler').styler();
     }
-
+    
+    //Init slicknav header
     $('.header-nav').slicknav({
       appendTo: '#header .bottom-header .container',
       label: ''

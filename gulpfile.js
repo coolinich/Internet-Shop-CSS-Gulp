@@ -18,7 +18,12 @@ gulp.task('css', function(){
 });
 
 gulp.task('cssmin', function(){
-    return gulp.src("src/css/**/style.css")   //minify style.css from /src/ folder so build task also can work
+    return gulp.src([
+        "app/css/**/*.css",
+        "!app/css/style.min.css"
+
+    ])
+    .pipe(concat(styles.css))
     .pipe(minifycss())
     .pipe(rename('style.min.css'))
     .pipe(gulp.dest('app/css/'))

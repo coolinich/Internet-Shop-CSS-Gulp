@@ -440,10 +440,6 @@ textarea.form-control {
     margin-top: 24px;   
 }
 
-.aside-section .product-info-list > li + li {
-    /* margin-top: 20px; */
-}
-
 .aside-section .product-info-list > li {
     font-size: .93rem;
     font-family: 'robotomedium', Helvetica, sans-serif;
@@ -520,8 +516,6 @@ textarea.form-control {
     font-size: .93rem;
     color: #8bc34a;
 }
-
-
 
 .card-author-info {
     padding: 16px 20px;
@@ -645,14 +639,17 @@ textarea.form-control {
 
     .mobile-aside-toggle {
         display: block;
+        font-size: 1.5rem;
     }
 
     .close-mobile-aside {
         display: block;
         position: absolute;
-        top: 10px;
-        right: 10px;
+        top: 5px;
+        right: 15px;
         color: #fff;
+        background: transparent;
+        font-size: 1.5rem;
     }    
 
     body.show-aside {
@@ -876,7 +873,6 @@ textarea.form-control {
 
 .user-info-wrap i {
     margin-left: 10px;
-    /* font-size: 1.07rem; */
     color: #707070;
 }
 
@@ -940,7 +936,6 @@ textarea.form-control {
 
     }
 
-
     .user-controls {
         width: 100%;
         margin-top: 30px;
@@ -948,14 +943,31 @@ textarea.form-control {
     }
 }
 
-@media(max-width: 576px) {
+@media(max-width: 575px) {
+    .need-help {
+        margin-right: 5px;
+    } 
+
     .user-controls {
         flex-wrap: wrap;
     }
+
     .user-dropdown-control {
         width: 100%;
         margin-top: 10px;
         margin-bottom: 10px;
+    }
+
+    .dropdown-menu.notifications {
+        min-width: 310px;
+    }
+
+    .dropdown-menu.notifications.show {
+        top: 10px!important;
+    }
+
+    .breadcrumb {
+        display: none;
     }
 }
 
@@ -1305,7 +1317,14 @@ h2.section-title {
         margin-left: 0;
         margin-top: 6px;
     }
+
+    .new-items-wrap .btn + .btn {
+        margin-left: 0;
+        margin-top: 20px;
+    }
+    
 } 
+
 
 
 /* tabs with newest and trending products section end  */

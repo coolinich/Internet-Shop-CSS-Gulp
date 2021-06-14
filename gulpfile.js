@@ -11,6 +11,12 @@ var gulp = require('gulp'),
     minifyjs = require('gulp-js-minify'),
     browserSync = require('browser-sync');
 
+
+function defaultTask(done) {
+    gulp.parallel('watch');
+    done();
+}    
+
 gulp.task('css', function(){
     return gulp.src("src/css/**/*.css")
     .pipe(autoprefixer({
@@ -80,24 +86,25 @@ gulp.task('js', function(){
         .pipe(gulp.dest('app/js'));
 });
 
-gulp.task('watch', ['css', 'cssmin', 'sprite', 'browser-sync'], function(){
-    gulp.watch('src/css/**/*.css', ['css']);
-    gulp.watch('app/css/style.css', ['cssmin']);
-    gulp.watch('src/sprite/*.png', ['sprite']);
-});
+
+gulp.task('watch', gulp.series('css', 'cssmin', 'sprite', 'browser-sync', () => {
+    gulp.watch('src/css/**/*.css', gulp.series('css'));
+    gulp.watch('app/css/style.css', gulp.series('cssmin'));
+    gulp.watch('src/sprite/*.png', gulp.series('sprite'));
+}));
 
 
 gulp.task('clean', function(){
     del.sync('app/css');
     del.sync('app/js');
     del.sync('app/img');
-//add all other folders which should be removed in /app/ before build-task
 })
 
 //here in list of all tasks for PRD build 
-gulp.task('build', ['css', 'cssmin', 'tinypng', 'js'], function(){
-//for case if any html is present in src
-    gulp.src('src/*.html')
-    .pipe(gulp.dest('app/'));
+gulp.task('build', gulp.series('css', 'cssmin', 'tinypng', 'js', (done) => {
+        gulp.src('src/*.html')
+        .pipe(gulp.dest('app/'));
+        done(); 
+}));
 
-});
+exports.default = defaultTask;

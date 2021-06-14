@@ -1314,12 +1314,16 @@ h2.section-title {
 
 @media(max-width: 767px) {
     .new-items-wrap .nav.nav-pills > li {
-        width: 100%;
+        width: 75%;
     }
 
     .new-items-wrap .nav.nav-pills > li + li {
         margin-left: 0;
-        margin-top: 6px;
+        margin-top: .5rem;
+    }
+    
+    .new-items-wrap .nav.nav-pills > li > a {
+        display: block;
     }
 
     .new-items-wrap .btn + .btn {
@@ -1328,8 +1332,6 @@ h2.section-title {
     }
     
 } 
-
-
 
 /* tabs with newest and trending products section end  */
 /* Range slider start */
